@@ -22,13 +22,25 @@
         </nav>
     </header>
     <main>
-        <section>
+        <section id="about">
             <p>Lit Penguins is a simple website boasting an amalgamation of awesome penguins</p>
         </section>
-        <section>
-            <img src="images/home/grumpy-penguin.jpg" alt="a penguin with a grumpy looking face">
-            <img src="images/home/king-penguin.jpg" alt="a king penguin with large eye brows">
-            <img src="images/home/rockhopper-penguins.jpg" alt="two rockhopper penguins walking">
+        <section id="gallery">
+            <table>
+                <tr>
+                    <td>
+                        <img src="images/home/grumpy-penguin.jpg" alt="a penguin with a grumpy looking face">
+                    </td>
+                    <td>
+                        <img src="images/home/king-penguin.jpg" alt="a king penguin with large eye brows">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="images/home/rockhopper-penguins.jpg" alt="two rockhopper penguins walking">
+                    </td>
+                </tr>
+            </table>           
         </section>
         <section id="news">
             <h2>Penguin News</h2>
@@ -36,16 +48,19 @@
                 <li>
                     <h3>Check Out the Newest Penguin to Join the Pyongyang Zoo</h3>
                     <summary>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sodales condimentum.</summary>
+                    <br>
                     <article>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sit amet sodales velit. Morbi a euismod ante. Aliquam libero elit, suscipit eu urna ac, interdum porta odio. Vestibulum vestibulum sit amet metus vitae pulvinar. Ut vestibulum nisi eget odio vulputate, vel interdum risus porta. Proin luctus consequat lorem ut faucibus. Quisque id sodales ante. In erat enim, dignissim pretium mi quis, varius elementum mi. Phasellus vitae sapien magna. Sed nec neque non arcu ultrices fringilla ac at metus. Aenean condimentum dui sit amet eros aliquam viverra.</article>
                 </li>
                 <li>
                     <h3>Changes to Rockhopper Penguins Migration Patterns</h3>
                     <summary>Lorem ipsum dolor sit amet, consectetur adipiscing.</summary>
+                    <br>
                     <article>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean consectetur felis gravida tincidunt molestie. Cras sollicitudin neque eget tempor interdum. Etiam iaculis, sapien in rutrum mollis, sem nibh luctus nisi, non volutpat erat purus et sapien. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nunc lacinia posuere nunc at faucibus. Donec faucibus, mi vel bibendum lobortis, sapien enim feugiat felis, non sodales leo sem ut quam. Donec et mi tempor turpis viverra elementum ac id nunc. Sed sit amet erat nulla. Nullam in libero eu sapien semper vulputate eu vitae augue. Integer accumsan justo at nisi feugiat, vel porta nisl lobortis.</article>
                 </li>
                 <li>
                     <h3>Meet the Newest Penguin Charity on the Block</h3>
                     <summary>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris hendrerit dapibus leo in imperdiet.</summary>
+                    <br>
                     <article>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a elementum nulla. Curabitur ultricies sem et mauris commodo, et sagittis nunc porta. Nullam sit amet orci ut lectus mattis vulputate eget vestibulum ante. Sed dictum ipsum et libero dictum lacinia. Nunc porta erat a arcu sodales imperdiet. Integer ac dui a justo placerat ullamcorper. Etiam eleifend lectus quis dolor imperdiet dignissim. Nulla justo felis, vestibulum in ex nec, sodales viverra neque.</article>
                 </li>
             </ul>
@@ -53,45 +68,45 @@
     </main>
     <footer>
         <table>
-            <thead>Lit Penguin</thead>
-            <tbody>
-                <tr>
-                    <td><img src="images/home/github-mark.png" alt="GitHub logo"></td>
-                    <td>
-                        <p>Find Us On GitHub</p>
-                        <a href="https://github.com/kaylubh/lit-penguins">lit-penguins</a>
-                    </td>
-                    <td>
-                        <p><a href="#">About</a></p>
-                        <ul>
-                            <li><a href="#">Who We Are</a></li>
-                            <li><a href="#">What We Do</a></li>
-                        </ul>
-                    </td>
-                    <td>
-                        <p><a href="#">Gallery</a></p>
-                        <ul>
-                            <li><a href="#">In the Wild</a></li>
-                            <li><a href="#">At the Zoo</a></li>
-                        </ul>
-                    </td>
-                    <td>
-                        <p><a href="#">Learn</a></p>
-                        <ul>
-                            <li><a href="#">Species</a></li>
-                            <li><a href="#">Endangered Penguins</a></li>
-                        </ul>
-                    </td>
-                    <td>
-                        <p><a href="#">Act</a></p>
-                        <ul>
-                            <li><a href="#">Donate</a></li>
-                            <li><a href="#">Climate Change</a></li>
-                        </ul>
-                    </td>
-                    <td><img src="images/logo/lit-penguin-logo.png" alt="a penguin emoji with a fire in front of it"></td>
+            <tr>
+                <th scope="col" colspan="6">Lit Penguin</th>
+            </tr>
+            <tr>
+                <td><img src="images/home/github-mark.png" alt="GitHub logo"></td>
+                <td>
+                    <p>Find Us On GitHub</p>
+                    <a href="https://github.com/kaylubh/lit-penguins">lit-penguins</a>
+                </td>
+                <td>
+                    <p><a href="#">About</a></p>
+                    <ul>
+                        <li><a href="#">Who We Are</a></li>
+                        <li><a href="#">What We Do</a></li>
+                    </ul>
+                </td>
+                <td>
+                    <p><a href="#">Gallery</a></p>
+                    <ul>
+                        <li><a href="#">In the Wild</a></li>
+                        <li><a href="#">At the Zoo</a></li>
+                    </ul>
+                </td>
+                <td>
+                    <p><a href="#">Learn</a></p>
+                    <ul>
+                        <li><a href="#">Species</a></li>
+                        <li><a href="#">Endangered Penguins</a></li>
+                    </ul>
+                </td>
+                <td>
+                    <p><a href="#">Act</a></p>
+                    <ul>
+                        <li><a href="#">Donate</a></li>
+                        <li><a href="#">Climate Change</a></li>
+                    </ul>
+                </td>
+                <td><img src="images/logo/lit-penguin-logo.png" alt="a penguin emoji with a fire in front of it"></td>
                 </tr>
-            </tbody>
         </table>
     </footer>
 </body>

@@ -1,3 +1,8 @@
+body {
+    background-color:#FEF6F1;
+    font-family: sans-serif;
+}
+
 /* header */
 
 header h1 {
@@ -23,24 +28,82 @@ nav ul li {
     margin-left: auto;
     margin-right: auto;
     padding-inline: 5% 5%; 
-    border: solid 1px black;
+    background-color: #0D0D0D;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: black;
+    color: #FEF6F1;;
 }
 
 nav ul li:hover {
     text-decoration: none;
-    box-shadow: 2px 2px 2px black;
+    box-shadow: 2px 2px 2px #B8B8BF;
     font-weight: bold;
+}
+
+/* main */
+
+main {
+    display: grid;
+}
+
+main section {
+    border: 1px solid black;
+}
+
+#about {
+    width: 60%;
+    background-color: #F25C05;
+    color: #FEF6F1;
+    text-align: center;
+}
+
+#gallery {
+    width: 60%;
+    background-color: #0D0D0D;
+}
+
+section table tr td {
+    margin: 1%;
+    padding: 1%;
+}
+
+section table tr td img {
+    width: 100%;
+}
+
+#news {
+    width: 40%;
+    background-image:url(images/home/penguin-crossing.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    right: 0;
+}
+
+section h2 {
+    background-color: #F2DD72;
+    text-align: center;
+}
+
+section ul li {
+    list-style: none;
+    background-color: rgba(254, 246, 241, .8);
+    color: #0D0D0D;
+    margin: 5%;
+    padding: 2%;
+}
+
+section ul li summary {
+    text-align: justify;
+    font-style: italic;
 }
 
 /* footer */
 
 footer table {
-    display: flex;
+    display: grid;
     justify-content: center;
 }
 
