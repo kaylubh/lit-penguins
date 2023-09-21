@@ -1,0 +1,55 @@
+/* header */
+
+header h1 {
+    float: right;
+}
+
+header img {
+    height: 100px;
+    width: 100px;
+}
+
+/* nav */
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-inline: 5% 5%; 
+    border: solid 1px black;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+nav ul li:hover {
+    text-decoration: none;
+    box-shadow: 2px 2px 2px black;
+    font-weight: bold;
+}
+
+/* footer */
+
+footer table {
+    display: flex;
+    justify-content: center;
+}
+
+footer td {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer img {
+    height: 50px;
+    width: 50;
+}
