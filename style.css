@@ -48,10 +48,6 @@ main {
     display: grid;
 }
 
-main section {
-    border: 1px solid black;
-}
-
 #about {
     width: 60%;
     background-color: #F25C05;
