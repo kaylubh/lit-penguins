@@ -96,6 +96,11 @@ section ul li summary {
     font-style: italic;
 }
 
+section ul li a {
+    color: #0D0D0D;
+    font-weight: bold;
+}
+
 /* footer */
 
 footer table {
@@ -111,4 +116,10 @@ footer td {
 footer img {
     height: 50px;
     width: 50;
+}
+
+/* dynamic content */
+
+.collapse {
+    display: none;
 }
