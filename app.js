@@ -1,60 +1,40 @@
 'use strict'
 
-// ask user about penguins
+// poll user about penguins
 
-let answer;
-let welcomeMessage;
-
-answer = prompt('Do you like penguins?');
-
+function penguinPoll(){
+    let answer = prompt('Do you like penguins?');
+    answer = answer.toLowerCase();
+    let welcomeMessage;
     if (answer == 'yes') {
         welcomeMessage = 'Me Too!';
     } else if (answer == 'yea') {
         welcomeMessage = 'Me Too!';
     } else if (answer == 'ya') {
         welcomeMessage = 'Me Too!';
+    } else if (answer == 'yep') {
+        welcomeMessage = 'Me Too!';
     } else {
-        welcomeMessage= 'That is Too Bad!';
+        alert('Try Again! (The Correct Answer is "Yes")');
+        penguinPoll();
     }
-
-alert(welcomeMessage);
-
-// expand news articles
-
-let article;
-let button;
-
-function collapseAllArticles () {
-    article = document.getElementById('article-1');
-    article.classList.add('collapse');
-    button = document.getElementById('article-1-button');
-    button.innerHTML = 'Read More';
-    article = document.getElementById('article-2');
-    article.classList.add('collapse');
-    button = document.getElementById('article-2-button');
-    button.innerHTML = 'Read More';
-    article = document.getElementById('article-3');
-    article.classList.add('collapse');
-    button = document.getElementById('article-3-button');
-    button.innerHTML = 'Read More';
+    if (welcomeMessage == 'Me Too!') {
+        alert(welcomeMessage);
+    }
 }
 
-window.onload = collapseAllArticles;
+penguinPoll();
 
-let expand;
+// expand and collapse news articles
 
-function expandArticle1 () {
-    expand = document.getElementById('article-1');
-    expand.classList.remove('collapse');
+function expandAndCollapseArticles(articleNum){
+    let article = document.getElementById('article-' + articleNum);
+    let button = document.getElementById('article-' + articleNum + '-button');
+    if (article.classList.contains('collapse')){
+        article.classList.remove('collapse');
+        button.innerHTML = 'Show Less';
+    } else {
+        article.classList.add('collapse');
+        button.innerHTML = 'Read More';
+    }
 }
-
-function expandArticle2 () {
-    expand = document.getElementById('article-2');
-    expand.classList.remove('collapse');
-}
-
-function expandArticle3 () {
-    expand = document.getElementById('article-3');
-    expand.classList.remove('collapse');
-}
-
