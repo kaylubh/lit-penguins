@@ -1,28 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Lit Penguins</title>
-        <link rel="icon" href="../images/logo/lit-penguin-favicon.png" type="image/png">
-        <link rel="stylesheet" href="gallery-style.css">
-        <script src="gallery-app.js"></script>
-    </head>
-    <body>
-        <header>
-            <h1>Lit Penguins</h1>
-            <img src="../images/logo/lit-penguin-logo.png" alt="a penguin emoji with a fire in front of it">
-            <nav>
-                <ul>
-                    <li><a href="#">About</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="#">Learn</a></li>
-                    <li><a href="#">Act</a></li>
-                </ul>
-            </nav>
-        </header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lit Penguins</title>
+    <link rel="icon" href="../images/logo/lit-penguin-favicon.png" type="image/png">
+    <link rel="stylesheet" href="gallery-style.css">
+    <script src="gallery-app.js"></script>
+</head>
 <body>
-    
+    <header>
+        <h1>Lit Penguins</h1>
+        <img src="../images/logo/lit-penguin-logo.png" alt="a penguin emoji with a fire in front of it">
+        <nav>
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="#">Learn</a></li>
+                <li><a href="#">Act</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="selection">
+            <p>Make Your Own Penguin Colony with the Penguins Below:</p>
+            <div id="selection-images">
+                <img src="../images/gallery/emperor.jpg" alt="emperor penguin">
+                <img src="../images/gallery/chinstrap.jpg" alt="chinstrap penguin">
+                <img src="../images/gallery/macaroni.jpg" alt="macaroni penguin">
+                <img src="../images/gallery/little.jpg" alt="little penguin">
+                <img src="../images/gallery/hungry.jpg" alt="hungry penguin, a penguin plush looking into a fridge">
+            </div>
+            <div id="selection-input">
+                <ul>
+                    <li>
+                        <p>Emperor Penguin</p>
+                        <input type="number" min="0" max="5">
+                    </li>
+                    <li>
+                        <p>Chinstrap Penguin</p>
+                        <input type="number" min="0" max="5">
+                    </li>
+                    <li>
+                        <p>Macaroni Penguin</p>
+                        <input type="number" min="0" max="5">
+                    </li>
+                    <li>
+                        <p>Little Penguin</p>
+                        <input type="number" min="0" max="5">
+                    </li>
+                    <li>
+                        <p>Hungry Penguin</p>
+                        <input type="number" min="0" max="5">
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section id="gallery">
+
+        </section>
+    </main>
+    <footer>
+        <table>
+            <tr>
+                <th scope="col" colspan="6">Lit Penguin</th>
+            </tr>
+            <tr>
+                <td><img src="../images/home/github-mark.png" alt="GitHub logo"></td>
+                <td>
+                    <p>Find Us On GitHub</p>
+                    <a href="https://github.com/kaylubh/lit-penguins">lit-penguins</a>
+                </td>
+                <td>
+                    <p><a href="#">About</a></p>
+                    <ul>
+                        <li><a href="#">Who We Are</a></li>
+                        <li><a href="#">What We Do</a></li>
+                    </ul>
+                </td>
+                <td>
+                    <p><a href="#">Gallery</a></p>
+                    <ul>
+                        <li><a href="#">In the Wild</a></li>
+                        <li><a href="#">At the Zoo</a></li>
+                    </ul>
+                </td>
+                <td>
+                    <p><a href="#">Learn</a></p>
+                    <ul>
+                        <li><a href="#">Species</a></li>
+                        <li><a href="#">Endangered Penguins</a></li>
+                    </ul>
+                </td>
+                <td>
+                    <p><a href="#">Act</a></p>
+                    <ul>
+                        <li><a href="#">Donate</a></li>
+                        <li><a href="#">Climate Change</a></li>
+                    </ul>
+                </td>
+                <td><img src="../images/logo/lit-penguin-logo.png" alt="a penguin emoji with a fire in front of it"></td>
+                </tr>
+        </table>
+    </footer>
 </body>
 </html>
