@@ -14,11 +14,13 @@ function penguinPoll(){
         welcomeMessage = 'Me Too!';
     } else if (answer == 'yep') {
         welcomeMessage = 'Me Too!';
+    } else if (answer == 'potato') {
+        welcomeMessage = 'Potato is Free!';
     } else {
         alert('Try Again! (The Correct Answer is "Yes")');
         penguinPoll();
     }
-    if (welcomeMessage == 'Me Too!') {
+    if (typeof welcomeMessage === 'string') {
         alert(welcomeMessage);
     }
 }
