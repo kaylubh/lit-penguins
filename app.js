@@ -4,6 +4,9 @@
 
 function penguinPoll(){
     let answer = prompt('Do you like penguins?');
+    while (answer == '') {
+        penguinPoll();
+    }
     answer = answer.toLowerCase();
     let welcomeMessage;
     if (answer == 'yes') {
