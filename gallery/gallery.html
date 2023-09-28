@@ -24,7 +24,9 @@
     </header>
     <main>
         <section id="selection">
-            <p>Make Your Own Penguin Colony with the Penguins Below:</p>
+            <div id="selection-header">
+                <p>Create Your Own Penguin Colony</p>
+            </div>
             <div id="selection-images">
                 <img src="../images/gallery/emperor.jpg" alt="emperor penguin">
                 <img src="../images/gallery/chinstrap.jpg" alt="chinstrap penguin">
@@ -36,29 +38,28 @@
                 <ul>
                     <li>
                         <p>Emperor Penguin</p>
-                        <input type="number" min="0" max="5">
+                        <input type="number" min="0" max="5" id="emperor" oninput="getCount()">
                     </li>
                     <li>
                         <p>Chinstrap Penguin</p>
-                        <input type="number" min="0" max="5">
+                        <input type="number" min="0" max="5" id="chinstrap" oninput="getCount()">
                     </li>
                     <li>
                         <p>Macaroni Penguin</p>
-                        <input type="number" min="0" max="5">
+                        <input type="number" min="0" max="5" id="macaroni" oninput="getCount()">
                     </li>
                     <li>
                         <p>Little Penguin</p>
-                        <input type="number" min="0" max="5">
+                        <input type="number" min="0" max="5" id="little" oninput="getCount()">
                     </li>
                     <li>
                         <p>Hungry Penguin</p>
-                        <input type="number" min="0" max="5">
+                        <input type="number" min="0" max="5" id="hungry" oninput="getCount()">
                     </li>
                 </ul>
             </div>
         </section>
-        <section id="gallery">
-
+        <section id="colony-gallery">
         </section>
     </main>
     <footer>
